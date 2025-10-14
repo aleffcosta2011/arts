@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Aleff Costa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Aleff Costa</h1>
+      <p>Desenhos Artísticos & Criativos</p>
+    </div>
+  </header>
+
+  <!-- Destaque -->
+  <section class="hero">
+    <img id="hero-image" src="./images/destaque.jpg" alt="Destaque">
+    <div class="hero-caption">
+      <h2 id="hero-title">Título da Obra em Destaque</h2>
+      <p id="hero-technique">Técnica ou ano da obra</p>
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <section class="filters">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="Aquarela">Aquarela</button>
+    <button class="filter-btn" data-filter="Grafite">Grafite</button>
+    <button class="filter-btn" data-filter="Digital">Digital</button>
+  </section>
+
+  <!-- Galeria -->
+  <main class="gallery-container">
+    <section class="gallery" id="gallery"></section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Aleff Costa — Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagem ampliada">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="lightbox-prev" id="prev">&lt;</button>
+    <button class="lightbox-next" id="next">&gt;</button>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
